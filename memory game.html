@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="img/png" href="resources/favicon.png" />
+    <meta name="author" content="TheUnknownProgrammer" />
+    <meta name="audience" content="Everyone" />
+    <meta name="description" content="Memory Game In Browser" />
+    <meta
+      name="keywords"
+      content="Memory Game, Browser Game, Game, video game, Memorize Game"
+    />
+    <title>Memory Game</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="menu_screen">
+      <h1>Memory Game</h1>
+      <h3>Select The Size Of The Game.</h3>
+      <label>Timer:</label>
+      <input type="checkbox" id="check_timer" />
+      <input type="number" min="30" step="30" id="timerInput" value="30" />
+
+      <div id="size_buttons"></div>
+
+      <p class="show_pairs">pairs will show here</p>
+    </div>
+
+    <div id="Game_Container">
+      <div id="GameBoard"></div>
+
+      <p id="info"></p>
+      <p>moves: <span id="total_moves"></span></p>
+      <p>Pairs Got: <span id="Pairs_Got"></span></p>
+      <p id="timerEl"></p>
+      <button
+        id="give_up"
+        title="Give Up This Round And Get Back To The Menu Screen. (This Will Erase The Current Round Progress!)"
+      >
+        GIVE UP
+      </button>
+      <button id="backMenu" title="get back to the menu screen.">
+        Back To Menu
+      </button>
+    </div>
+  </body>
+</html>

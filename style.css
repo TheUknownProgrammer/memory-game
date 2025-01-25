@@ -1,0 +1,127 @@
+button {
+  user-select: none;
+  cursor: pointer;
+}
+#menu_screen h1 {
+  margin-top: 0;
+  text-decoration: underline;
+}
+#menu_screen {
+  box-sizing: border-box;
+  font-family: calibri;
+  background-color: rgb(177, 218, 218);
+  width: 300px; /* fit-content */
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 3px 3px 6px gray;
+}
+#menu_screen button {
+  margin: 10px;
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 50%;
+}
+#menu_screen button:hover {
+  background-color: white;
+}
+#Game_Container {
+  display: none;
+}
+#Game_Container > * {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+#GameBoard {
+  position: relative;
+  /*border: 1px solid black;
+      background-color: rgb(184, 253, 253);*/
+  display: none;
+}
+#GameBoard .card {
+  border-radius: 5px;
+  position: absolute;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+  color: white;
+  border: 1px solid black;
+  font-size: 35px;
+  transition: 0.2s;
+  cursor: pointer;
+  user-select: none;
+}
+#GameBoard .card:hover {
+  background-color: rgb(95, 95, 95);
+}
+#Game_Container > p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+#info {
+  text-transform: uppercase;
+}
+#backMenu {
+  display: none;
+  background-color: green;
+  color: white;
+  border: 1px solid gray;
+  padding: 5px;
+  transition: 0.2s;
+}
+#backMenu:hover {
+  background-color: rgb(0, 179, 0);
+}
+#backMenu:active {
+  /*transition: 0s;*/
+  background-color: rgb(0, 161, 0);
+  border: 1px solid black;
+  /*font-weight: bold;*/
+  border-radius: 2.5px;
+  text-decoration: underline;
+}
+.show_pairs {
+  background-color: cadetblue;
+  padding: 10px;
+  width: fit-content;
+  color: white;
+  border: 1px solid black;
+  margin-right: auto;
+  margin-left: auto;
+}
+#timerEl {
+  display: none;
+}
+#timerInput {
+  display: none;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+#Pairs_Got span {
+  color: white;
+  background-color: gray;
+}
+#give_up {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: red;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+#give_up:hover {
+  background-color: rgb(255, 77, 77);
+}
